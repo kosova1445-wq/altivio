@@ -114,10 +114,16 @@ export default function Home() {
         <div className="serviceGrid">{t.services.map((s:string[])=><article className="serviceCard" key={s[1]}><div className="serviceTop"><span>{s[0]}</span><i>{s[3]}</i></div><h3>{s[1]}</h3><p>{s[2]}</p><a href="#contact">{t.more}</a></article>)}</div>
       </div></section>
 
-      <section id="work" className="section case"><div className="container caseGrid"><div className="caseCopy"><div className="eyebrow mint">{t.caseEyebrow}</div><h2>{t.caseTitle}</h2><p>{t.caseP}</p><a className="btn" href="#contact">{t.caseBtn}</a></div>
+      <section id="work" className="section case"><div className="container caseGrid"><div className="caseCopy"><div className="eyebrow mint">{t.caseEyebrow} <span className="demoBadge">DEMO</span></div><h2>{t.caseTitle}</h2><p>{t.caseP}</p><a className="btn" href="#contact">{t.caseBtn}</a></div>
         <div className="caseMock"><div className="browserBar"><span></span><span></span><span></span></div><div className="caseScreen"><small>ALTIVIO CASE STUDY</small><strong>Premium Design.<br/>Real Performance.</strong></div></div>
         <div className="stats"><div><b>+180%</b><span>{t.stats[0]}</span></div><div><b>+74%</b><span>{t.stats[1]}</span></div><div><b>98/100</b><span>{t.stats[2]}</span></div></div>
       </div></section>
+
+      <section className="portfolioBand"><div className="container"><div className="portfolioIntro"><div><div className="eyebrow mint">ALTIVIO LAB</div><h2>Selected digital concepts</h2></div><p>Tre drejtime vizuale demonstrative që tregojnë llojin e projekteve që Altivio mund të realizojë. Do të zëvendësohen me projekte reale sapo portfolio të jetë gati.</p></div><div className="projectGrid">
+        <article className="projectCard projectOne"><span>01 / WEB</span><div><b>Corporate Premium</b><small>Strategy · UX/UI · Development</small></div></article>
+        <article className="projectCard projectTwo"><span>02 / COMMERCE</span><div><b>Modern E-commerce</b><small>Store · Payments · Automation</small></div></article>
+        <article className="projectCard projectThree"><span>03 / SAAS</span><div><b>Digital Product</b><small>Product Design · SaaS · AI</small></div></article>
+      </div></div></section>
 
       <section id="process" className="section light"><div className="container"><div className="sectionHead"><div><div className="eyebrow coral">{t.processEyebrow}</div><h2>{t.processTitle}</h2></div><p>{t.processP}</p></div><div className="steps">{t.steps.map((s:string[])=><div className="step" key={s[1]}><span>{s[0]}</span><h3>{s[1]}</h3><p>{s[2]}</p></div>)}</div></div></section>
 
@@ -125,7 +131,7 @@ export default function Home() {
         <div className="priceGrid">{t.plans.map((p:any,i:number)=><article className={`priceCard ${i===2?"featured":""}`} key={p[0]}>{i===2&&<div className="popular">{t.popular}</div>}<h3>{p[0]}</h3><div className="price">{p[1]}</div><ul>{p[2].map((x:string)=><li key={x}>✓ {x}</li>)}</ul><a className={i===2?"choose coralBtn":"choose"} href="#contact">{t.choose}</a></article>)}</div>
       </div></section>
 
-      <section className="section testimonials"><div className="container"><div className="eyebrow coral">{t.testimonialsEyebrow}</div><h2>{t.testimonialsTitle[0]}<br/>{t.testimonialsTitle[1]}</h2><div className="testimonialGrid">{t.quotes.map((q:string[])=><article key={q[1]}><div className="stars">★★★★★</div><p>“{q[0]}”</p><b>{q[1]}</b><small>{t.client}</small></article>)}</div></div></section>
+      <section className="section testimonials"><div className="container"><div className="eyebrow coral">{t.testimonialsEyebrow} <span className="demoBadge lightDemo">DEMO</span></div><h2>{t.testimonialsTitle[0]}<br/>{t.testimonialsTitle[1]}</h2><div className="testimonialGrid">{t.quotes.map((q:string[])=><article key={q[1]}><div className="stars">★★★★★</div><p>“{q[0]}”</p><b>{q[1]}</b><small>{t.client}</small></article>)}</div></div></section>
 
       <section className="section faqSection"><div className="container"><div className="sectionHead"><div><div className="eyebrow coral">{t.faqEyebrow}</div><h2>{t.faqTitle}</h2></div><p>ALTIVIO · Digital Studio · Switzerland</p></div><div className="faqGrid">{t.faq.map((f:string[],i:number)=><details key={f[0]} open={i===0}><summary>{f[0]}<span>+</span></summary><p>{f[1]}</p></details>)}</div></div></section>
 

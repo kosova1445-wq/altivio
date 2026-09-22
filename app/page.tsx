@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type Lang = "sq" | "fr" | "en" | "de";
 
@@ -137,7 +137,7 @@ export default function Home() {
 
       <section id="contact" className="section contact"><div className="container contactGrid"><div><div className="eyebrow mint">{t.contactEyebrow}</div><h2>{t.contactTitle}</h2><p>{t.contactP}</p></div><form><input placeholder={t.form[0]}/><input type="email" placeholder={t.form[1]}/><select defaultValue=""><option value="" disabled>{t.form[2]}</option><option>Website</option><option>E-commerce</option><option>SEO / Google Ads</option><option>Application / SaaS</option><option>Branding</option></select><input placeholder={t.form[3]}/><textarea placeholder={t.form[4]}></textarea><button type="button">{t.submit}</button></form></div></section>
 
-      <footer><div className="container footerGrid"><div className="footBrand"><a href="#top" className="brand"><span className="brandMark" aria-hidden="true"><span className="brandPeak"></span><span className="brandCut"></span></span><span className="brandText">ALTIVIO<small>Digital Studio</small></span></a><p>{t.footerP}</p></div><div><b>{t.nav[0]}</b><a href="#services">Web</a><a href="#services">E-commerce</a><a href="#services">SEO & Google Ads</a></div><div><b>{t.company}</b><a href="#work">{t.nav[1]}</a><a href="#process">{t.nav[2]}</a><a href="#contact">{t.nav[4]}</a></div><div><b>Altivio</b><span>Digital Studio · Switzerland</span><span>altivio.ch</span><a href="/admin">Admin</a></div></div><div className="container copyright">© 2026 Altivio. {t.rights}</div></footer>
+      <footer><div className="container footerGrid"><div className="footBrand"><a href="#top" className="brand"><span className="brandMark" aria-hidden="true"><span className="brandPeak"></span><span className="brandCut"></span></span><span className="brandText">ALTIVIO<small>Digital Studio</small></span></a><p>{t.footerP}</p></div><div><b>{t.nav[0]}</b><a href="#services">Web</a><a href="#services">E-commerce</a><a href="#services">SEO & Google Ads</a></div><div><b>{t.company}</b><a href="#work">{t.nav[1]}</a><a href="#process">{t.nav[2]}</a><a href="#contact">{t.nav[4]}</a></div><div><b>Altivio</b><span>Digital Studio · Switzerland</span><span>altivio.ch</span></div></div><div className="container copyright">© 2026 Altivio. {t.rights}</div></footer>
     </main>
   );
 }

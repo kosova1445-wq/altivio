@@ -15,3 +15,10 @@
 footer{background:#040b13;color:#cbd5dc;padding:56px 0 24px}.footerGrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:42px}.footerGrid>div{display:flex;flex-direction:column;gap:10px}.footerGrid b{color:white}.footerGrid a,.footerGrid span,.footerGrid p{font-size:12px;color:#8fa0aa}.footBrand .brand{color:white}.copyright{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;margin-top:34px;color:#6f808b;font-size:11px}
 @media(max-width:900px){.nav nav,.navCta{display:none}.heroGrid,.sectionHead,.caseGrid,.contactGrid{grid-template-columns:1fr}.hero{padding-top:58px}.hero h1{font-size:48px}.heroVisual{height:360px}.laptop{width:88%;right:7%;height:245px}.phone{right:0;bottom:12px}.benefitGrid{grid-template-columns:1fr 1fr}.serviceGrid,.steps,.priceGrid{grid-template-columns:1fr 1fr}.testimonialGrid{grid-template-columns:1fr}.footerGrid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.container{width:min(100% - 24px,1180px)}.nav{height:68px;padding:0 14px}.hero h1{font-size:40px}.heroCopy>p{font-size:16px}.actions{flex-direction:column}.btn{width:100%}.heroVisual{height:320px}.laptop{top:42px;width:92%;right:4%;height:218px}.phone{width:86px;height:172px}.metric{right:64px;bottom:6px}.benefitGrid,.serviceGrid,.steps,.priceGrid,.footerGrid,.contact form{grid-template-columns:1fr}.benefitGrid>div{border-right:0;border-bottom:1px solid rgba(255,255,255,.08)}.section{padding:66px 0}.sectionHead{gap:18px}.sectionHead h2,.case h2,.contact h2,.testimonials h2{font-size:34px}.priceCard.featured{transform:none}.contact textarea,.contact button{grid-column:auto}}
+
+
+.langSwitch{display:flex;gap:4px;margin-left:4px;padding:4px;border:1px solid rgba(255,255,255,.10);border-radius:999px;background:rgba(255,255,255,.04)}
+.langSwitch button{border:0;background:transparent;color:#9fb0ba;padding:6px 8px;border-radius:999px;font-size:10px;font-weight:900;cursor:pointer}
+.langSwitch button.active{background:var(--mint);color:#03231d}
+@media(max-width:900px){.nav{gap:12px}.langSwitch{margin-left:auto}.navCta{display:none}}
+@media(max-width:600px){.langSwitch button{padding:5px 6px;font-size:9px}}

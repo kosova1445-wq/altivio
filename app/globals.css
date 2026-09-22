@@ -156,3 +156,23 @@ img{max-width:100%;height:auto}
 .adminActions span{font-size:11px;color:#88959d}
 .health{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #edf1f3;font-size:12px}.health b{color:#008b75}
 @media(max-width:850px){.adminShell{grid-template-columns:1fr}.adminSide{position:relative;height:auto}.adminSide nav{grid-template-columns:1fr 1fr}.adminMain{padding:22px}.adminGrid{grid-template-columns:1fr}.adminBack{margin-top:10px}}
+
+
+/* Portfolio concepts */
+.demoBadge{display:inline-flex;align-items:center;margin-left:8px;padding:3px 6px;border-radius:999px;background:rgba(255,255,255,.1);color:#b9c8cf;font-size:8px;letter-spacing:.12em;vertical-align:middle}
+.lightDemo{background:#eef3f5;color:#6d7c85}
+.portfolioBand{padding:72px 0;background:#06101d;color:#fff;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+.portfolioIntro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:28px}
+.portfolioIntro h2{font-size:38px;letter-spacing:-.03em;margin:10px 0 0}
+.portfolioIntro p{margin:0;color:#9cafb9;line-height:1.65}
+.projectGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.projectCard{min-height:280px;border-radius:18px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,.1);transition:transform .25s ease,border-color .25s ease}
+.projectCard:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-45px;top:-45px;background:radial-gradient(circle,rgba(0,214,180,.28),transparent 68%)}
+.projectCard:hover{transform:translateY(-5px);border-color:rgba(0,214,180,.35)}
+.projectCard>span{position:relative;z-index:2;color:#8fa4af;font-size:10px;letter-spacing:.16em}
+.projectCard>div{position:relative;z-index:2;display:flex;flex-direction:column;gap:6px}
+.projectCard b{font-size:22px}.projectCard small{color:#9eb0ba}
+.projectOne{background:linear-gradient(145deg,#123948,#091621)}
+.projectTwo{background:linear-gradient(145deg,#2a1e28,#10151c)}
+.projectThree{background:linear-gradient(145deg,#111f38,#0a151f)}
+@media(max-width:900px){.portfolioIntro,.projectGrid{grid-template-columns:1fr}.projectCard{min-height:220px}}
